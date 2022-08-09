@@ -1,20 +1,41 @@
-window.addEventListener('DOMcontentLoaded', navigator, false)
-window.addEventListener('hashchange', navigator, false)
+window.addEventListener("DOMContentLoaded", navigator, false);
+window.addEventListener("hashchange", navigator, false);
 
 function navigator() {
-    console.log({location})
+  console.log({ location });
 
-    if(location.hash.startsWith(' #trends ')) {
-        console.log('trends')
-    }else if (location.hash.startsWith(' #search=')) {
-        console.log('search')
-    } else if (location.hash.startsWith(' #movie=')) {
-        console.log('profile')
-    }else if (location.hash.startsWith(' #category=')) {
-        console.log('category')
-    }else {
-        console.log('home')
-    }
-    location.hash
+  if (location.hash.startsWith("#trends")) {
+    trendsPage();
+  } else if (location.hash.startsWith("#search=")) {
+    searchPage();
+  } else if (location.hash.startsWith("#movie=")) {
+    movieDetailsPage();
+  } else if (location.hash.startsWith("#category=")) {
+    categoriesPage();
+  } else {
+    homePage();
+  }
 }
 
+function homePage() {
+  console.log("Home!!");
+
+  getTrendingMoviesPreview();
+  getCategegoriesPreview();
+}
+
+function categoriesPage() {
+  console.log("categories!!");
+}
+
+function movieDetailsPage() {
+  console.log("Movie!!");
+}
+
+function searchPage() {
+  console.log("Search!!");
+}
+
+function trendsPage() {
+  console.log("TRENDS!!");
+}
