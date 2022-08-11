@@ -38,4 +38,4 @@ function searchPage() {
 
 function trendsPage() {
   console.log("TRENDS!!");
-}
+} 
