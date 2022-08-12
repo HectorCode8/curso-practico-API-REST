@@ -20,6 +20,18 @@ function navigator() {
 function homePage() {
   console.log("Home!!");
 
+  headerSection.classList.remove("header-container--long");
+  headerSection.style.background = '';
+  arrowBtn.classList.add('inactive');
+  headerCategoryTitle.classList.add('inactive');
+  headerTitle.classList.add('inactive');
+  searchFormInput.classList.remove('inactive');
+
+  trendingPreviewSection.classList.remove('inactive');
+  categoriesPreviewSection.classList.remove('inactive');
+  genericSection.classList.add('inactive');
+  movieDetailSection.classList.add('inactive');
+
   getTrendingMoviesPreview();
   getCategegoriesPreview();
 }
