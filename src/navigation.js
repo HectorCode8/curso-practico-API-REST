@@ -30,8 +30,6 @@ function navigator() {
 }
 
 function homePage() {
-  console.log("Home!!");
-
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
   arrowBtn.classList.add("inactive");
@@ -50,8 +48,6 @@ function homePage() {
 }
 
 function categoriesPage() {
-  console.log("categories!!");
-
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
   arrowBtn.classList.remove("inactive");
@@ -59,7 +55,6 @@ function categoriesPage() {
   headerTitle.classList.add("inactive");
   headerCategoryTitle.classList.remove("inactive");
   searchForm.classList.add("inactive");
-
   trendingPreviewSection.classList.add("inactive");
   categoriesPreviewSection.classList.add("inactive");
   genericSection.classList.remove("inactive");
@@ -67,8 +62,6 @@ function categoriesPage() {
 }
 
 function movieDetailsPage() {
-  console.log("Movie!!");
-
   headerSection.classList.add("header-container--long");
   // headerSection.style.background = '';
   arrowBtn.classList.remove("inactive");
@@ -84,8 +77,6 @@ function movieDetailsPage() {
 }
 
 function searchPage() {
-  console.log("Search!!");
-
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
   arrowBtn.classList.remove("inactive");
@@ -101,8 +92,6 @@ function searchPage() {
 }
 
 function trendsPage() {
-  console.log("TRENDS!!");
-
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
   arrowBtn.classList.remove("inactive");
