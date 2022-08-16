@@ -27,6 +27,7 @@ function navigator() {
   } else {
     homePage();
   }
+  document.scrollTop = 0;
 }
 
 function homePage() {
@@ -62,6 +63,8 @@ function categoriesPage() {
 
   const [ , categoryData] = location.hash.split("=");
   const [categoryId, categoryName] = categoryData.split("-");
+
+  headerCategoryTitle.innerHTML = categoryName;
 
   getMoviesByCategory(categoryId);
 }
